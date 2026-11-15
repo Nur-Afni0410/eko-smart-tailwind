@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Font & warna EKO SMART (dipakai sebagai class: font-sans, bg-eko, text-navy, dst.) */
+@theme {
+  --font-sans: "Poppins", system-ui, sans-serif;
+  --color-eko: #16a05f;
+  --color-eko-dark: #00812b;
+  --color-navy: #1a2e4f;
+  --color-mint: #f1faf5;
+  --color-mint-100: #e6f6ec;
+  --color-mint-200: #d4f1de;
+}
+
+/* Komponen kecil yang dipakai berulang, disusun dari utility Tailwind */
+@layer components {
+  .btn {
+    @apply inline-flex h-12 min-w-40 items-center justify-center gap-2 rounded-full bg-eko-dark px-6 font-medium text-white transition hover:-translate-y-0.5 hover:bg-eko;
+  }
+  .btn-light {
+    @apply inline-flex h-12 min-w-40 items-center justify-center gap-2 rounded-full bg-mint-200 px-6 font-medium text-eko-dark transition hover:-translate-y-0.5;
+  }
+  .btn-outline {
+    @apply inline-flex h-12 min-w-40 items-center justify-center gap-2 rounded-full border-2 border-eko-dark bg-white px-6 font-semibold text-eko-dark transition hover:-translate-y-0.5;
+  }
+  .badge {
+    @apply inline-block rounded-full bg-mint-100 px-4 py-1.5 text-sm font-medium text-eko;
+  }
+}
+
+/* Confetti pada halaman hasil nilai 100 */
+.confetti {
+  position: fixed; top: -20px; width: 10px; height: 14px; z-index: 50;
+  pointer-events: none; border-radius: 2px; animation: jatuh 4s linear infinite;
+}
+@keyframes jatuh { to { transform: translateY(110vh) rotate(720deg); } }
+@media (prefers-reduced-motion: reduce) { .confetti { display: none; } }

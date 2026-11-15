@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EKO SMART - Kuis 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="./output.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-mint px-3 py-4 font-sans text-slate-600 md:px-5" data-page="kuis" data-correct="C" data-next="kuis2.html" data-start="1">
+<div class="mx-auto w-full max-w-6xl">
+  <header id="navbar"></header>
+
+  <section id="quiz" class="mx-auto w-full max-w-3xl rounded-2xl bg-white p-5 shadow-lg md:p-8">
+    <div class="mb-6 flex flex-wrap items-center gap-4">
+      <img src="img/3 1.png" alt="Piala" class="h-20 w-20 md:h-24 md:w-24">
+      <div><h1 class="text-3xl font-semibold text-slate-600 md:text-4xl">Kuis</h1><p class="font-semibold text-slate-400">Soal 1 dari 10 · Pilih jawaban yang paling tepat!</p></div>
+      <div class="flex gap-2 sm:ml-auto"><span class="rounded-full bg-[#c3fcd9] px-4 py-1.5 text-sm font-semibold text-[#0a7d2c]">Benar: <b id="skor-benar">0</b></span><span class="rounded-full bg-red-100 px-4 py-1.5 text-sm font-semibold text-red-600">Salah: <b id="skor-salah">0</b></span></div>
+    </div>
+    <div class="rounded-xl bg-mint-100 p-5 md:p-8">
+      <h2 class="mb-6 text-xl font-semibold leading-snug text-slate-600 md:text-2xl">Manakah yang termasuk komponen biotik?</h2>
+      <div class="space-y-4">
+        <button class="ans flex w-full items-center gap-3 rounded-full bg-[#c3fcd9] px-5 py-3 text-left text-base text-slate-600 shadow-md transition hover:translate-x-1 data-[state=ok]:bg-[#7be8a6] data-[state=no]:bg-[#ffc9c9] md:text-xl" data-k="A"><i class="h-6 w-6 shrink-0 rounded-full bg-white shadow"></i>A. Air</button>
+        <button class="ans flex w-full items-center gap-3 rounded-full bg-[#c3fcd9] px-5 py-3 text-left text-base text-slate-600 shadow-md transition hover:translate-x-1 data-[state=ok]:bg-[#7be8a6] data-[state=no]:bg-[#ffc9c9] md:text-xl" data-k="B"><i class="h-6 w-6 shrink-0 rounded-full bg-white shadow"></i>B. Batu</button>
+        <button class="ans flex w-full items-center gap-3 rounded-full bg-[#c3fcd9] px-5 py-3 text-left text-base text-slate-600 shadow-md transition hover:translate-x-1 data-[state=ok]:bg-[#7be8a6] data-[state=no]:bg-[#ffc9c9] md:text-xl" data-k="C"><i class="h-6 w-6 shrink-0 rounded-full bg-white shadow"></i>C. Katak</button>
+        <button class="ans flex w-full items-center gap-3 rounded-full bg-[#c3fcd9] px-5 py-3 text-left text-base text-slate-600 shadow-md transition hover:translate-x-1 data-[state=ok]:bg-[#7be8a6] data-[state=no]:bg-[#ffc9c9] md:text-xl" data-k="D"><i class="h-6 w-6 shrink-0 rounded-full bg-white shadow"></i>D. Cahaya matahari</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="wrong" class="mx-auto hidden w-full max-w-3xl text-center">
+    <div class="mx-auto max-w-xl overflow-hidden rounded-3xl"><img src="img/jawaban salah kuis.png" alt="Kodok sedih di tengah hujan" class="w-full"></div>
+    <div class="mt-6 rounded-2xl bg-white p-8 shadow-lg">
+      <h1 class="text-5xl font-extrabold text-[#0a7d2c] drop-shadow md:text-6xl">MAAF!!!</h1>
+      <h2 class="mt-2 text-3xl font-extrabold text-[#0a7d2c] md:text-4xl">JAWABAN ANDA <span class="text-red-600">SALAH</span></h2>
+    </div>
+    <div class="mt-6 flex justify-end"><button class="btn" id="kembali-wrong" type="button">Kembali →</button></div>
+  </section>
+
+  <div id="kembali-bar"><div class="mx-auto mt-6 flex max-w-3xl justify-end"><a class="btn" href="aktivitas.html">Kembali</a></div></div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EKO SMART - Aktivitas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="./output.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-mint px-3 py-4 font-sans text-slate-600 md:px-5" data-page="aktivitas">
+<div class="mx-auto w-full max-w-6xl">
+  <header id="navbar"></header>
+
+  <section id="v-intro">
+    <div class="rounded-2xl bg-white p-5 text-center shadow-md md:p-8">
+      <a href="materi1.html" class="block text-left text-sm">&lt; Kembali ke Materi</a>
+      <h1 class="mt-3 text-3xl font-semibold text-slate-600">Komponen Biotik &amp; Abiotik</h1>
+      <p class="mx-auto mt-2 max-w-xl font-semibold leading-relaxed text-slate-400">Ekosistem tersusun dari makhluk hidup (biotik) dan benda tak hidup (abiotik) yang saling berinteraksi.</p>
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+      <div class="overflow-hidden rounded-3xl bg-white shadow-lg">
+        <div class="flex items-center gap-4 bg-[#5fd084] p-4 text-xl font-medium text-white"><img src="img/daun header.png" alt="" class="h-14 w-14 rounded-full shadow-md">Komponen Biotik</div>
+        <div class="grid grid-cols-2 gap-6 p-6"><span class="flex flex-col items-center gap-2 text-slate-500"><img src="img/tanaman.png" alt="Tumbuhan" class="h-20 w-20 rounded-full shadow-md">Tumbuhan</span><span class="flex flex-col items-center gap-2 text-slate-500"><img src="img/hewan.png" alt="Hewan" class="h-20 w-20 rounded-full shadow-md">Hewan</span><span class="flex flex-col items-center gap-2 text-slate-500"><img src="img/mikrorganisme.png" alt="Mikroorganisme" class="h-20 w-20 rounded-full shadow-md">Mikroorganisme</span><span class="flex flex-col items-center gap-2 text-slate-500"><img src="img/manusia.png" alt="Manusia" class="h-20 w-20 rounded-full shadow-md">Manusia</span></div>
+      </div>
+      <div class="overflow-hidden rounded-3xl bg-white shadow-lg">
+        <div class="flex items-center gap-4 bg-[#5b9ff5] p-4 text-xl font-medium text-white"><img src="img/air header.png" alt="" class="h-14 w-14 rounded-full shadow-md">Komponen Abiotik</div>
+        <div class="grid grid-cols-2 gap-6 p-6"><span class="flex flex-col items-center gap-2 text-slate-500"><img src="img/cahaya matahari.png" alt="Cahaya Matahari" class="h-20 w-20 rounded-full shadow-md">Cahaya Matahari</span><span class="flex flex-col items-center gap-2 text-slate-500"><img src="img/air.png" alt="Air" class="h-20 w-20 rounded-full shadow-md">Air</span><span class="flex flex-col items-center gap-2 text-slate-500"><img src="img/tanah batu.png" alt="Tanah &amp; Batu" class="h-20 w-20 rounded-full shadow-md">Tanah &amp; Batu</span><span class="flex flex-col items-center gap-2 text-slate-500"><img src="img/udara.png" alt="Udara" class="h-20 w-20 rounded-full shadow-md">Udara</span></div>
+      </div>
+      </div>
+    </div>
+    <div class="mt-6 flex justify-between gap-3"><a class="btn-light" href="materi4.html">← Sebelumnya</a><button class="btn" id="to-match" type="button">Selanjutnya →</button></div>
+  </section>
+
+  <section id="v-match" class="hidden">
+    <div class="grid overflow-hidden rounded-2xl bg-white shadow-md lg:grid-cols-[20rem_1fr]">
+      <aside class="side-act p-5"></aside>
+      <main class="p-5 md:p-8">
+        <div class="flex flex-wrap items-start justify-between gap-3"><h1 class="text-3xl font-semibold text-slate-600">Mencocokkan Komponen</h1><span class="badge">Materi 1 dari 4</span></div>
+        <p class="mt-1 text-sm font-bold text-slate-400">Pilihlah Salah Satu Jawaban Yang Benar!</p>
+        <div class="mt-5 rounded-3xl bg-mint-100 px-4 py-3 md:px-8">
+        <div class="row flex items-center gap-3 py-3" data-answer="biotik"><span class="h-16 w-20 shrink-0 overflow-hidden rounded-lg"><img src="img/katak aktivitas.png" alt="Katak" class="h-full w-full object-cover"></span><span class="flex-1"></span><button class="opt h-9 w-24 rounded-full bg-mint-200 text-sm font-medium text-eko-dark transition hover:scale-105 data-[sel=true]:bg-eko-dark data-[sel=true]:text-white" data-v="biotik">Biotik</button><button class="opt h-9 w-24 rounded-full bg-mint-200 text-sm font-medium text-eko-dark transition hover:scale-105 data-[sel=true]:bg-eko-dark data-[sel=true]:text-white" data-v="abiotik">Abiotik</button></div>
+        <div class="row flex items-center gap-3 py-3" data-answer="abiotik"><span class="h-16 w-20 shrink-0 overflow-hidden rounded-lg"><img src="img/matahari aktivitas.png" alt="Matahari" class="h-full w-full object-cover"></span><span class="flex-1"></span><button class="opt h-9 w-24 rounded-full bg-mint-200 text-sm font-medium text-eko-dark transition hover:scale-105 data-[sel=true]:bg-eko-dark data-[sel=true]:text-white" data-v="biotik">Biotik</button><button class="opt h-9 w-24 rounded-full bg-mint-200 text-sm font-medium text-eko-dark transition hover:scale-105 data-[sel=true]:bg-eko-dark data-[sel=true]:text-white" data-v="abiotik">Abiotik</button></div>
+        <div class="row flex items-center gap-3 py-3" data-answer="biotik"><span class="h-16 w-20 shrink-0 overflow-hidden rounded-lg"><img src="img/daun aktivitas.png" alt="Daun" class="h-full w-full object-cover"></span><span class="flex-1"></span><button class="opt h-9 w-24 rounded-full bg-mint-200 text-sm font-medium text-eko-dark transition hover:scale-105 data-[sel=true]:bg-eko-dark data-[sel=true]:text-white" data-v="biotik">Biotik</button><button class="opt h-9 w-24 rounded-full bg-mint-200 text-sm font-medium text-eko-dark transition hover:scale-105 data-[sel=true]:bg-eko-dark data-[sel=true]:text-white" data-v="abiotik">Abiotik</button></div>
+        <div class="row flex items-center gap-3 py-3" data-answer="abiotik"><span class="h-16 w-20 shrink-0 overflow-hidden rounded-lg"><img src="img/batu aktivitas.png" alt="Batu" class="h-full w-full object-cover"></span><span class="flex-1"></span><button class="opt h-9 w-24 rounded-full bg-mint-200 text-sm font-medium text-eko-dark transition hover:scale-105 data-[sel=true]:bg-eko-dark data-[sel=true]:text-white" data-v="biotik">Biotik</button><button class="opt h-9 w-24 rounded-full bg-mint-200 text-sm font-medium text-eko-dark transition hover:scale-105 data-[sel=true]:bg-eko-dark data-[sel=true]:text-white" data-v="abiotik">Abiotik</button></div>
+        </div>
+        <div class="mt-5 flex justify-end"><button class="btn" data-go="intro" type="button">Kembali</button></div>
+      </main>
+    </div>
+    <p class="mt-4 text-xs font-bold leading-relaxed text-slate-400">Harap menunggu aktivitas berikutnya!<br>selamat mengerjakan</p>
+  </section>
+
+  <section id="v-benar" class="hidden">
+    <div class="grid overflow-hidden rounded-2xl bg-white shadow-md lg:grid-cols-[20rem_1fr]">
+      <aside class="side-act p-5" data-back="1"></aside>
+      <main class="p-5 md:p-8">
+        <div class="flex flex-wrap items-start justify-between gap-3"><h1 class="text-3xl font-semibold text-slate-600">Mencocokkan Komponen</h1><span class="badge">Materi 1 dari 1</span></div>
+        <div class="mt-5 rounded-3xl bg-mint-100 p-4">
+          <div class="overflow-hidden rounded-lg bg-white text-center shadow-md">
+            <img src="img/jawaban benar aktivitas.png" alt="Selamat" class="h-44 w-full object-cover">
+            <h2 class="mt-4 px-3 text-3xl font-bold text-[#169a4a]">Hebat! Semua Jawaban Benar!</h2>
+            <p class="mt-2 px-3 text-slate-700">Kamu berhasil mencocokkan semua komponen dengan tepat.</p>
+            <div class="m-5 flex flex-wrap items-center justify-center gap-4 rounded-3xl bg-white p-5"><a class="btn" href="kuis1.html">Lanjut</a><button class="btn-light ulangi" type="button">Ulangi Aktivitas</button></div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <section id="v-salah" class="hidden">
+    <div class="grid overflow-hidden rounded-2xl bg-white shadow-md lg:grid-cols-[20rem_1fr]">
+      <aside class="side-act p-5" data-back="1"></aside>
+      <main class="p-5 md:p-8">
+        <div class="flex flex-wrap items-start justify-between gap-3"><h1 class="text-3xl font-semibold text-slate-600">Mencocokkan Komponen</h1><span class="badge">Materi 1 dari 1</span></div>
+        <div class="mt-5 rounded-3xl bg-mint-100 p-4 text-center">
+          <div class="mx-auto max-w-md overflow-hidden rounded-3xl bg-white pb-6 shadow-md">
+            <img src="img/jawaan salah aktivitas.png" alt="Jawaban belum benar" class="w-full">
+            <h2 class="mt-2 px-6 text-2xl font-bold text-slate-800">Maaf, Jawaban Masih Belum Benar.</h2>
+            <p class="mt-2 px-8 text-sm text-slate-600">Coba tinjau kembali jawabanmu dan pelajari materinya dengan.</p>
+            <span class="mt-3 inline-block bg-[#2d9c4e] px-8 py-2 font-semibold text-white">Tetap Semangat!</span>
+          </div>
+          <div class="mt-5 flex flex-wrap justify-center gap-4"><a class="btn" href="materi1.html">Ulangi Materi</a><button class="btn ulangi" type="button">Ulangi Aktivitas</button></div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

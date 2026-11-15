@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EKO SMART - Hasil Kuis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="./output.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-mint px-3 py-4 font-sans text-slate-600 md:px-5" data-page="hasil">
+<div class="mx-auto w-full max-w-6xl">
+  <header id="navbar"></header>
+
+  <section class="mx-auto w-full max-w-3xl rounded-2xl bg-white p-5 shadow-lg md:p-8">
+    <div class="mb-6 flex items-center gap-4">
+      <img src="img/3 1.png" alt="Piala" class="h-20 w-20 md:h-24 md:w-24">
+      <div><h1 class="text-3xl font-semibold text-slate-600 md:text-4xl">Hasil Kuis</h1><p id="h-pesan" class="font-semibold text-slate-400">Memuat hasil...</p></div>
+    </div>
+    <div id="award" class="hidden">
+      <div class="mb-5 flex flex-col items-center gap-4 rounded-2xl border-2 border-amber-400 bg-amber-100 p-4 text-center shadow-md sm:flex-row sm:text-left">
+        <div class="text-6xl">🏆</div>
+        <div><h2 class="text-xl font-extrabold text-amber-800 md:text-2xl">Penghargaan: Juara Ekosistem!</h2><p class="mt-1 font-semibold text-amber-900/80">Kamu menjawab semua soal dengan benar tanpa kesalahan. Nilai sempurna 100!</p></div>
+      </div>
+    </div>
+    <div class="rounded-xl bg-mint-100 p-5 md:p-8">
+      <div class="mb-6 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-2xl bg-white p-6 text-center font-semibold text-slate-400 shadow-md"><b id="h-benar" class="block text-5xl font-extrabold text-[#0a7d2c]">0</b>Jawaban Benar</div>
+        <div class="rounded-2xl bg-white p-6 text-center font-semibold text-slate-400 shadow-md"><b id="h-salah" class="block text-5xl font-extrabold text-red-500">0</b>Jawaban Salah</div>
+        <div class="rounded-2xl bg-white p-6 text-center font-semibold text-slate-400 shadow-md"><b id="h-nilai" class="block text-5xl font-extrabold text-navy">0</b>Nilai</div>
+      </div>
+      <div class="h-4 overflow-hidden rounded-full bg-white shadow-inner"><i id="h-bar" class="block h-full w-0 rounded-full bg-eko transition-all duration-700"></i></div>
+    </div>
+  </section>
+  <div class="mx-auto mt-6 flex max-w-3xl justify-end gap-4"><a class="btn-light" href="kuis1.html">Ulangi Kuis</a><a class="btn" href="index.html">Selesai →</a></div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
